@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Equation in 2 variables</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">Linear Equation in 2 Variables</div>
+    <div class="eqn" id="eqn1">
+        <input type='tel' placeholder="a1" value='2' class="ipt" id='a1' required>x +
+        <input type='tel' placeholder="b1" value='3' class="ipt" id="b1" required>y = 
+        <input type='tel' placeholder="c1" value='8' class="ipt" id="c1" required>
+    </div>
+    <div class="eqn" id="eqn2">
+        <input type='tel' placeholder="a2" value='3' class="ipt" id="a2" required>x +
+        <input type='tel' placeholder="b2" value='2' class="ipt" id="b2" required>y =
+        <input type='tel' placeholder="c2" value='6' class="ipt" id="c2" required>
+    </div>
+    <div class="btn"> <button onclick="calc() ">Calculate</button></div>
+    <div class="result" id="rsl">
+        <span id="xvalue"></span><br/>
+        <span id="yvalue"></span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

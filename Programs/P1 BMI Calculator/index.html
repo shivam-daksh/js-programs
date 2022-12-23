@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <section>
+        <header>
+            <h1>BMI Calculator</h1>
+        </header>
+    </section>
+    <section>
+        <main>
+            <div class="container" id="main">
+                <div class="optn">Weight (in kg) :</div><div> <input type="number" placeholder="Weight" value="56" min="1" max  ="500" maxlength="3" id="weight"/><i class="fa-solid fa-circle-exclamation error"></i><span id="wterr" class="errinfo">Please type correct weight between 1 to 500kg.</span></div>
+                <div class="optn">Height (in meter):</div><div> <input type="number" placeholder="Height" maxlength="3" value="1.7" id="height" min="1" max="5"/><i class="fa-solid fa-circle-exclamation error"></i><span id="hterr" class="errinfo">Please type correct height between 1 to 3 meter.</span></div>
+                <div class="optn"></div><div><button type="Submit" placeholder="Submit" value="Check your BMI" id="submit">Check You BMI</button><button id="clr">Clear</button></div>
+                <div class="optn"></div><div>Your BMI is : <span id="result"></span></span></div>
+                
+            </div>
+        </main>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

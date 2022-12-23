@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(to bottom, rgb(180, 29, 240),rgb(22, 177, 125));
+    height: 100vh;
+    width: 100%;
+}
+.eqn{
+    text-align:center;
+    line-height: 50px;
+    font-size: x-large;
+    font-weight: bold;
+    color: rgb(187, 187, 187);
+    user-select: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+div.btn{
+    text-align: center;
+}
+div>button{
+    padding: 20px 40px;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    color: white;
+    text-shadow: 1px 0.1px 10px white;
+    background-image: linear-gradient(to top right, rgb(180, 29, 240),rgb(22, 177, 125));
+    transition: 0.5s;
+    cursor: pointer;
+    user-select: none;
+    border: solid 2px white;
+    border-radius: 7px 7px 7px 7px;
+}
+div>button:hover{
+    border: dashed 2px transparent;
+    box-shadow: 1px 1px 15px 0.1px white;
+    background-image: linear-gradient(to top right,rgb(22, 177, 125),rgb(180, 29, 240));
+
+}
+.header{
+    margin-top: 5%;
+    text-align:center;
+    font-size: xx-large;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    color: transparent;
+    background-image: linear-gradient(to top,rgb(255, 255, 255),rgb(29, 240, 222));
+    -webkit-backface-visibility: transparent;
+    -webkit-background-clip: text;
+  }
+.ipt{
+    width: 50px;
+    height: 50px;
+    text-align:center;
+    color: white;
+    /* line-height: 50px; */
+    font-size: large;
+    outline: none;
+    border: none;
+    margin: 10px;
+    background-color: transparent;
+    border-top: dashed 3px transparent;
+    border-bottom: dashed 3px rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.5s;
+}
+.ipt:focus{
+    border-bottom: solid 3px rgb(5, 235, 108);
+    border-top: solid 3px rgb(5, 235, 108);
+    border-radius: 10px 10px 2px 2px;
+    box-shadow: inset 0px 0px 10px 0.1px rgb(255, 255, 255);
+}
+#a1::after{
+    content: 'x';
+    font-size: large;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+#a1{
+    /* background-color: green; */
+}
+.result{
+    text-align: center;
+}
+#xvalue,#xvalue::before{
+    content: 'x = ';
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+#yvalue,#yvalue::before{
+    content: 'y = ';
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}

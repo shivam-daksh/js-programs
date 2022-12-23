@@ -1,0 +1,125 @@
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        color:white;
+    }
+    body{
+        background-image: linear-gradient(to top, rgb(42, 165, 108), rgb(0, 119, 216));
+        height: 100vh;
+    }
+    header>h1{
+        text-align: center;
+        line-height: 50px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 2px;
+        color:rgb(3, 32, 43);
+        padding-bottom: 50px;
+        font-weight: bold;
+       }
+    div#main{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        align-content:center;
+        gap:10px;
+
+    }
+    div#main>div{
+        margin-left: 59.2px;
+    }
+    div.optn:nth-child(4){
+        
+    }
+    div.optn{
+        font-size: large;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        letter-spacing: 1px;
+
+
+    }
+    input{
+        color:black;
+        height:50px;
+        min-width: 200px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: large;
+        padding-left: 10px;
+        padding-right: 10px;
+        outline: none;
+        border-radius: 0;
+        border:none;
+        border-bottom: solid rgb(255, 128, 128) 5px;
+        transition: 0.3s ease-in-out;
+    }
+    button{
+        color:black;
+        height:50px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: large;
+        padding-left: 10px;
+        padding-right: 10px;
+        outline: none;
+        border-radius: 0;
+        border:none;
+        border-bottom: solid rgb(255, 128, 128) 5px;
+        cursor: pointer;
+        transition: 0.5s;
+        margin:20px;
+    }
+    button:hover{
+        border-bottom: solid rgb(128, 219, 255) 5px;
+        color: white;
+        font-weight: bold;
+        background-color: aqua;
+        
+    }
+    button#clr{
+        display: none;
+    }
+    button#clr:hover{
+        
+        border-bottom: solid red 5px;
+        background-color:rgb(238, 99, 99);
+    }
+    input:hover, input:focus{
+        border-bottom: solid rgb(128, 219, 255) 5px;
+    }
+    input:focus{
+        
+        border-bottom: solid rgb(128, 219, 255) 10px;
+    }
+    span#result{
+        font-size:medium;
+        font-weight:bold;
+
+    }
+    i.error{
+        padding: 20px;
+        font-size: larger;
+        float: right;
+        position: relative;
+        margin-right: -59.2px;
+    }
+    .errinfo{
+        width:fit-content;
+        height:fit-content;
+        max-width: 200px;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.87);
+        box-shadow: 0px 0px 10px 2px black;
+        color: white;
+        font-size: smaller;
+        border-radius: 5px;
+        padding: 5px;
+        margin-top: 10px;
+        margin-right:10px;
+        display: none;
+        transition: 0.3s ease-in;
+    }
+    .red{
+        color:red;
+    }
